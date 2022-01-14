@@ -6,4 +6,4 @@ if a > b:
     large = a
 else:
     large = b
-print('Large = ',large )
+print('Large = {large}' )
