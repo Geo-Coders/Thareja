@@ -7,7 +7,7 @@ marks4 = int(input('Enter the marks in Computers : '))
 
 total = marks1 + marks2 + marks3 + marks4
 avg = float(total)/4
-print('Total = ',total, '\t Aggregate = ',avg)
+print(f'Total = {total}' f'\t Aggregate = {avg}')
 if avg >=75:
     print('Distinction')
 elif avg >=60 and avg <75:

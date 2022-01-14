@@ -1,9 +1,8 @@
 #----- program 4.12 -----
 # Write a program to calculate tax given the following conditions
-if income is less than 150,000 then no tax
-if taxable income is 150,001 - 300,000 then charge 10% tax
-if taxable income is 300,001 - 500,000 then charge 20% tax
-if taxable income is above 500,001 then charge 30% tax
+#if taxable income is 150,001 - 300,000 then charge 10% tax
+#if taxable income is 300,001 - 500,000 then charge 20% tax
+#if taxable income is above 500,001 then charge 30% tax
 MIN1 = 1500001
 MAX1 = 300000
 RATE1 = 0.10
