@@ -6,5 +6,5 @@ while i <= 10:
     s = s + i
     i +=1
 avg = float(s)/10
-print('The sum of first 10 numbers is : ',s)
-print('The average of the first 10 numbers is : ', avg)
+print(f'The sum of first 10 numbers is : {s}')
+print(f'The average of the first 10 numbers is : {avg}')

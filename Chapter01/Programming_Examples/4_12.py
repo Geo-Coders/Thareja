@@ -22,4 +22,4 @@ elif taxable_income >= MIN2 and taxable_income < MAX2:
     tax = (taxable_income - MIN2) * RATE2
 else:
     tax = (taxable_income - MIN3) * RATE3
-print('TAX = ',tax)
+print(f'TAX = {tax}')

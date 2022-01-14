@@ -9,4 +9,4 @@ s = 0
 while m <= n:
     s = s+m
     m += 1
-print('SUM = ',s)
+print(f'SUM = {s}')

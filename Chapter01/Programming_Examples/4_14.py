@@ -1,5 +1,7 @@
 # ----- program 4.14 -----
-# Write a program to enter the marks of a student in four subjects. Then calculate the total and aggregate, and display the garde obtained by the student. If the student scores an aggregate greater than 755, then the grade is Distinction. If aggregate is 60>= and < 75, then  the grade is First Division. If aggregate is 5o>= and <60, then the grade is Second Division. If aggregate is 40>= and<50, then the grade is Third Division. Else the grade is Fail
+# Write a program to enter the marks of a student in four subjects. Then calculate the total and aggregate, and display the grade obtained by the student. 
+# If the student scores an aggregate greater than 75, then the grade is Distinction. If aggregate is 60>= and < 75, then  the grade is First Division. 
+# If aggregate is 50>= and <60, then the grade is Second Division. If aggregate is 40>= and<50, then the grade is Third Division. Else the grade is Fail
 marks1 = int(input('Enter the marks in Mathematics : ')) 
 marks2 = int(input('Enter the marks in Science : ')) 
 marks3 = int(input('Enter the marks in Social Science : ')) 

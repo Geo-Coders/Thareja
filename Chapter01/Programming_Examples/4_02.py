@@ -6,5 +6,5 @@ if char.isalpha():
 if char.isdigit():
     print('The user has entered a digit')
 if char.isspace():
-    print('The user entered a whie space character')
+    print('The user entered a white space character')
         
