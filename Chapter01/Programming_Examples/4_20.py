@@ -17,5 +17,5 @@ while num != -1:
     num = int(input('Enter the number : '))
 neg_avg = float(neg_s)/neg_count
 pos_avg = float(pos_s)/pos_count
-print('The average negative numbers is : ',neg_avg)
-print('The average positive numbers is : ',pos_avg)
+print(f'The average negative numbers is : {neg_avg}')
+print(f'The average positive numbers is : {pos_avg}')
