@@ -19,6 +19,6 @@ while ch != '*':
         low_count +=1
     elif ch >= 'A' and ch <= 'Z':
         up_count += 1
-print('Number of lowercase character are : ',low_count)
-print('Number of uppercase character are : ',up_count)
-print('Number of numerals are : ',num_count)
+print(f'Number of lowercase character are : {low_count}')
+print(f'Number of uppercase character are : {up_count}')
+print(f'Number of numerals are : {num_count}')
