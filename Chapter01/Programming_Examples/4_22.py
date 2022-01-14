@@ -9,4 +9,4 @@ while decimal_num != 0:
     binary_num = binary_num +remainder * (10**i)
     decimal_num = decimal_num / 2
     i += 1
-print('The binary equivalent =',binary_num)
+print(f'The binary equivalent = {binary_num}')
