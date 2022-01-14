@@ -3,7 +3,7 @@
 ch = input('Enter any character : ')
 if ch.isupper():
     ch = ch.lower()
-    print('The entered character was in uppercase. In lowercase it is : {ch}')
+    print(f'The entered character was in uppercase. In lowercase it is : {ch}')
 else:
     ch = ch.upper()
-    print('The entered character was in lowercase. In upperrcase it is : {ch}')
+    print(f'The entered character was in lowercase. In upperrcase it is : {ch}')
