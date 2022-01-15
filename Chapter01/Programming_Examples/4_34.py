@@ -1,4 +1,4 @@
-# Write a program using while loop to read the numbers untill -1 is encounteres. Also, count the number of prime numbers and composite numbers encountered by the user
+# Write a program using while loop to read the numbers until -1 is encountered. Also, count the number of prime numbers and composite numbers encountered by the user
 
 total_prime = 0
 total_composite = 0
