@@ -23,6 +23,7 @@ while input_ != '-1':
 
     input_= input('Enter another character: ')
 
+print()
 print(f'{digit_counter} digit characters entered')
 print(f'{lowercase_counter} lowercase characters entered')
 print(f'{uppercase_counter} uppercase characters entered')
