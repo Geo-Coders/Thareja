@@ -7,7 +7,7 @@ print('Enter -1 to quit the Program at any time\n')
 
 digit_counter= lowercase_counter= uppercase_counter= 0 
 
-input_= input('Enter the character to : ')
+input_= input('Enter the character to count: ')
 while input_ != '-1':
     if input_.isdigit():
         digit_counter += 1
@@ -21,7 +21,7 @@ while input_ != '-1':
     else:
         print('Enter a valid character: ')
 
-    input_= input('Enter the character to evaluate: ')
+    input_= input('Enter another character: ')
 
 print(f'{digit_counter} digit characters entered')
 print(f'{lowercase_counter} lowercase characters entered')
