@@ -12,9 +12,9 @@ def fib(n):
 def main():
     ''' A function that contain the main body of the program '''
     num_= int(input('Enter the number of terms: '))
+
     for i in range(num_):
         print(f'Fibonacci {i} = {fib(i)}')
-
 
 if __name__ == '__main__':
     main()
