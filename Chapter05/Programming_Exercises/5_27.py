@@ -1,20 +1,25 @@
-# Write a program to print the Fibonacci series using recursion.
+# Write a program to calculate exp(x,y) without using recursion
 
-print('--- Fibonacci Series ---')
+print('--- A Program to calculate Exponential ---')
 print()
 
-def fib(n):
-    ''' A Fibonacci Series Function '''
-    if n <2: 
+
+
+def exp(x,y):
+    p = f = 1.0
+
+    if y == 0: 
         return 1
-    return (fib(n-1) + fib(n-2))
+    r = exp(x, y-1)
 
-def main():
-    ''' A function that contain the main body of the program '''
-    num_= int(input('Enter the number of terms: '))
-    for i in range(num_):
-        print(f'Fibonacci {i} = {fib(i)}')
+    p *= x
+    f *= y
 
+    return (r + (p/f))
 
-if __name__ == '__main__':
-    main()
+x= int(input('Enter the base number: '))
+y= int(input('Enter the power value: '))
+
+print()
+print(f'{round(exp(x,y),2)}')
+print()
