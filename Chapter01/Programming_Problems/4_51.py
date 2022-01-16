@@ -11,14 +11,3 @@ print()
 for i in range(1, nth_num+1):
     print(f'2^{i}')
     print()
-
-
-
-
-
-
-
-
-
-
-
