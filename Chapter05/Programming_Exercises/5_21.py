@@ -14,7 +14,7 @@ def main():
 
     print()
 
-    print(f'The anwser: {power(x,y)}')
+    print(f'The answer: {power(x,y)}')
 
 
 if __name__ == '__main__':
