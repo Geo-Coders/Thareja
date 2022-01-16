@@ -9,6 +9,7 @@ def power(x,y):
     return pow(x,y)
 
 def main():
+    ''' A function that take the radius then returns the surface area of a sphere.'''
     x= int(input('Enter the base value: '))
     y= int(input('Enter the Power Value: '))
 
