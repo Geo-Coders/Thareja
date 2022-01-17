@@ -5,21 +5,18 @@ print()
 
 
 
-def exp(x,y):
-    p = f = 1.0
+def exp(x,n):
+    ''' A function to calculate value using sum of first n terms of Taylor Series '''
+    sum = 1.0
 
-    if y == 0: 
-        return 1
-    r = exp(x, y-1)
+    for i in range(n, 0, -1):
+        sum = 1 + x * sum/i
 
-    p *= x
-    f *= y
-
-    return (r + (p/f))
+    return sum
 
 x= int(input('Enter the base number: '))
-y= int(input('Enter the power value: '))
+n= int(input('Enter the nth value: '))
 
 print()
-print(f'{round(exp(x,y),2)}')
+print(f'e^x = {round(exp(x,n),2)}')
 print()
