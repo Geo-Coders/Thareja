@@ -3,6 +3,8 @@
 # Write a program that takes as inputs the hourly wage
 # Total regular hours and total overtime hours
 # and prints an employee's total weekly pay
+print('---- A program to calculate employees weekly wages -----')
+print()
 
 Hourly_wage = int(input('Enter the hourly wage amount : '))
 Total_regular_hours = int(input('Enter the total regular hours worked : '))

@@ -4,6 +4,8 @@
 # Truck/bus - $20 per hour
 # car - $10 per hour
 # scooter/cycle/motor cycle - $5 per hour
+print('------ A program to calculate parking charges------')
+print()
 
 input_ = input('Enter the type of the car ( b, t, c, s) : ')
 Time = int(input('Enter the number of hours parked : '))

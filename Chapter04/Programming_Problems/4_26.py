@@ -5,6 +5,8 @@
 # 301-450   $250 plus $4 per unit exceeding 350 units
 # 451-600   $300 plus $4.25 per unit exceeding 450 units
 # Above 600 $400 plus $5 per unit exceeding 600 units
+print('------- A program to calculate electricity charges------')
+print()
 
 units = int(input('Enter the number of units used : '))
 

@@ -1,4 +1,6 @@
 # Write a program that determines whether a digit, uppercase, or a lowercase character was entered
+print('----- A program to determine whether a character is a digit, uppercase or lowercase -----')
+print()
 
 char = input('Enter a character : ')
 if  char >= '0' and char <= '9':

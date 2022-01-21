@@ -2,7 +2,8 @@
 # If it is positive then display the corresponding binary representation of that number
 # The user must enter 999 to stop.
 # Incase the user enters a negative number, then ignore that input and ask the user to re-enter any different number
-
+print('----- A program to display the binary representation of a given positive integer ------')
+print()
 print('Enter 999 to Exit')
 int_num = 0
 binary_num = '0'

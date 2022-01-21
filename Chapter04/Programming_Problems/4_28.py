@@ -2,12 +2,15 @@
 # Then calculate the age of the user and display it on the screen 
 # Note that the date should be displayed in the format  specified as - dd/mm/yy
 
-Todays_date = int(input('Enter today\'s date (mm/dd/yy): '))
+print('----- A program to calculate age -------')
+print()
+
+from bisect import bisect_right
+from datetime import datetime
 Birth_date = int(input('Enter your date of birth (dd/mm/yy) : '))
 
-if Todays_date < Birth_date:
-     print('Enter a valid date')
-else:
-    age =  Todays_date - Birth_date
-    print(f'Your age is {age}')
+age_in_years = datetime.now().year -Birth_date
+
+print(age_in_years)
+
 
