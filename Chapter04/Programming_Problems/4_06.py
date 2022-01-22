@@ -3,6 +3,8 @@
 # If the number is less tha 99, print- enter again and aim higher
 # Else print enter again a lower number. 
 # The program should run until the user guesses the correct the number 99 that is
+print('---- A program to guess 99 as the lucky number -----')
+print()
 
 num = int(input('Guess a number : '))
 while num != 99:
