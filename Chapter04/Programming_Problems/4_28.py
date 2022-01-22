@@ -5,7 +5,6 @@
 print('----- A program to calculate age -------')
 print()
 
-from bisect import bisect_right
 from datetime import datetime
 Birth_date = int(input('Enter your date of birth (dd/mm/yy) : '))
 
