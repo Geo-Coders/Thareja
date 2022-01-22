@@ -1,4 +1,6 @@
 # Write a program that finds average of first n numbers using for loop
+print('----- A program to average the first n numbers using for loop -----')
+print()
 
 n = int(input('Enter the value of n : '))
 avg = 0.0
