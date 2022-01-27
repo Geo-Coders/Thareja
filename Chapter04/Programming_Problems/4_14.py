@@ -5,15 +5,15 @@ print('------- A program to input 6 character word ------' )
 print()
 
 for i in range (1,6):
-    
-    while i <= 5:
-        input_ = input('Enter a word: ')
-        if len(input_) < 6:
-            print('Enter words with more than 6 characters')
+    input_ = input('Enter a word: ')
+    while len(input_) < 6:
         
-        else:
-            print(input_)
-            input_ = input('Enter another word: ')
+        print('Enter words with more than 6 characters')
+        input_ = input('Enter another word: ')
+        
+    else:
+        print(input_)
+            
             
        
     
