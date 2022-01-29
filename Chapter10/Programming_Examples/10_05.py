@@ -2,7 +2,7 @@
 # which also has a class Publications.
 
 class Person:
-    def __init___(self, name, age, sex):
+    def __init__(self, name, age, sex):
         self.name= name
         self.age= age
         self.sex= sex
@@ -25,7 +25,7 @@ class Publications:
 
 class Faculty(Person):
     def __init__(self, name, age, sex, design, dept, no_RP, no_Books, no_Art):
-        Person.__init__(self, name, age, sex)
+        super(Faculty,self).__init__(name, age, sex)
         self.design= design
         self.dept= dept
         self.Pub= Publications(no_RP, no_Books, no_Art)
