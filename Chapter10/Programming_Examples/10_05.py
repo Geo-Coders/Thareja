@@ -25,7 +25,7 @@ class Publications:
 
 class Faculty(Person):
     def __init__(self, name, age, sex, design, dept, no_RP, no_Books, no_Art):
-        super(Person).__init__(name, age, sex)
+        Person.__init__(self, name, age, sex)
         self.design= design
         self.dept= dept
         self.Pub= Publications(no_RP, no_Books, no_Art)
@@ -38,3 +38,4 @@ class Faculty(Person):
 
 F= Faculty('Pooja', 38, 'Female', 'TIC', 'Computer Science', 22, 1, 3)
 F.display()
+
