@@ -23,24 +23,26 @@ print()
 class Time:
     def __init__(self):
         try:
-            self.start= time.strptime(input('self.start the starting time (eg HH:MM:SS) : '), '%H:%M:%S')
-            self.end= time.strptime(input('self.start the ending time (eg HH:MM:SS) : '), '%H:%M:%S')
+            self.in_hrs = int(input("Enter the time of entrance (HH) : "))
+            self.in_min = int(input("Enter the time of entrance (MM) : "))
+            self.out_hrs = int(input("Enter the time of Leaving (HH) : "))
+            self.out_min = int(input("Enter the time of leaving (MM) : "))
 
         except ValueError:
-            print('Time data self.started does not match format \'%H:%M:%S\'')
+            print('Invalid Time data')
 
     def checking_times_duration(self):
-        if self.end_time < self.start_time:
+        end_time= self.out_hrs + (self.out_min/60)
+        start_time= self.in_hrs + (self.in_min/60)
+        if end_time < start_time:
             raise InvalidEndingTime
         else:
-            self.start_delta = datetime.timedelta(hours=self.start.hour, minutes=self.start.minute, seconds=self.start.second)
-            self.end_time_delta = datetime.timedelta(hours=self.end_time.hour, minutes=self.end_time.minute, seconds=self.end_time.second)
-            difference_delta = self.end_time_delta - self.start_delta
-            print(f'Time left : {difference_delta}')
+            time_spent = (end_time) - (start_time)
+            print(f'Time left : {time_spent} Hours')
 
     def show(self):
-        print(f'Ending time : {self.end_time}')
-        print(f'Starting time : {self.start_time}')
+        print(f'Ending time : {self.out_hrs}:{self.out_min}')
+        print(f'Starting time : {self.in_hrs}:{self.in_min}')
 
 test= Time()
 test.checking_times_duration()
