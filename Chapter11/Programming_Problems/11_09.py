@@ -1,10 +1,10 @@
-# Write a menu driven program to overload +=, -=, ==, >= and 
-# <= operators on the Distance class
+# Write a menu driven program to overload +=, -=, ==, >= and <=
+# operators on the Height class.
 
-print('--- Operator Overloading on Distance Class ---')
+print('--- Operator Overloading on Height Class ---')
 print()
 
-class Distance:
+class Height:
     def __init__(self,m):
         self.m= m
 
@@ -17,17 +17,17 @@ class Distance:
         return self.m
 
     def __eq__(self, other):
-            if isinstance(other, Distance):
+            if isinstance(other, Height):
                 return self.m == other.m
             return False
 
     def __ge__(self, other):
-        if isinstance(other, Distance):
+        if isinstance(other, Height):
             return self.m >= other.m
         return False
 
     def __le__(self,other):
-        if isinstance(other, Distance):
+        if isinstance(other, Height):
             return self.m <= other.m
         return False
 
@@ -52,10 +52,10 @@ while True:
         print()
         print('--- Addition Option has been selected ---')
         print()
-        test0= int(input('Enter the first distance : '))
-        var1= Distance(test0)
-        test1= int(input('Enter the second Distance : '))
-        var2= Distance(test1)
+        test0= int(input('Enter the first Height : '))
+        var1= Height(test0)
+        test1= int(input('Enter the second Height : '))
+        var2= Height(test1)
         var1 += var2
         print(f'The answer is : {var1}')
 
@@ -63,10 +63,10 @@ while True:
         print()
         print('--- Subtraction Option has been selected ---')
         print()
-        test0= int(input('Enter the first distance : '))
-        var1= Distance(test0)
-        test1= int(input('Enter the second Distance : '))
-        var2= Distance(test1)
+        test0= int(input('Enter the first Height : '))
+        var1= Height(test0)
+        test1= int(input('Enter the second Height : '))
+        var2= Height(test1)
         var1 -= var2
         print(f'The answer is : {var1}')
 
@@ -74,10 +74,10 @@ while True:
         print()
         print('--- Equating Option has been selected ---')
         print()
-        test0= int(input('Enter the first distance : '))
-        var1= Distance(test0)
-        test1= int(input('Enter the second Distance : '))
-        var2= Distance(test1)
+        test0= int(input('Enter the first Height : '))
+        var1= Height(test0)
+        test1= int(input('Enter the second Height : '))
+        var2= Height(test1)
         if var1 == var2:
             print(f'{test0} is equal to {test1}')
         else:
@@ -87,10 +87,10 @@ while True:
         print()
         print('--- Less than or Equal to  Option has been selected ---')
         print()
-        test0= int(input('Enter the first distance : '))
-        var1= Distance(test0)
-        test1= int(input('Enter the second Distance : '))
-        var2= Distance(test1)
+        test0= int(input('Enter the first Height : '))
+        var1= Height(test0)
+        test1= int(input('Enter the second Height : '))
+        var2= Height(test1)
         print()
         if var1 <= var2:
             print(f'{test0} is less than or equal to {test1}')
@@ -101,10 +101,10 @@ while True:
         print()
         print('--- Greater than or Equal to  Option has been selected ---')
         print()
-        test0= int(input('Enter the first distance : '))
-        var1= Distance(test0)
-        test1= int(input('Enter the second Distance : '))
-        var2= Distance(test1)
+        test0= int(input('Enter the first Height : '))
+        var1= Height(test0)
+        test1= int(input('Enter the second Height : '))
+        var2= Height(test1)
         print()
         if var1 >= var2:
             print(f'{test0} is greater than or equal to {test1}')
