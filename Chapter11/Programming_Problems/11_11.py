@@ -100,7 +100,7 @@ while True:
         real1= int(input('Enter the second real number : '))
         image1= int(input('Enter the second imaginary number : '))
         var2= Complex(real1,image1)
-        print(f'Is {var1} less than or equal to {var2} : {var1 == var2}')
+        print(f'Is {var1} equal to {var2} : {var1 == var2}')
     
     elif choice_ == '4':
         print()
@@ -124,7 +124,7 @@ while True:
         real1= int(input('Enter the second real number : '))
         image1= int(input('Enter the second imaginary number : '))
         var2= Complex(real1,image1)
-        print(f'Is {var1} less than or equal to {var2} : {var1 >= var2}')
+        print(f'Is {var1} greater than or equal to {var2} : {var1 >= var2}')
     else:
         print('Quiting the Program')
         break
