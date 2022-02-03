@@ -8,6 +8,9 @@ import numpy
 
 class Matrix:
     def read(self):
+        print()
+        print('--- Adding the input Option has been selected ---')
+        print()
         while True:
             var1= int(input('Enter the first number of the Matrix : '))
             var2= int(input('Enter the second number of the Matrix : '))
@@ -27,12 +30,56 @@ class Matrix:
             print('Confirm your inputs')
             print(f'x = \n{self._x}\ny = \n{self._y}')
             choice_= input('Enter y/n : ')
-            if choice_ == 'n':
+            if choice_ == 'y':
                 break
+
+    def add(self):
+        print()
+        print('--- Adding the Matrices Option has been selected ---')
+        print()
+        print('The result is : ')
+        print(numpy.add(self._x,self._y))
+        print()
+
+    def subtract(self):
+        print()
+        print('--- Subtracting the Matrices Option has been selected ---')
+        print()
+        print('The result is : ')
+        print(numpy.subtract(self._x,self._y))
+        print()
+
+    def multiply(self):
+        print()
+        print('--- Multiplying the Matrices Option has been selected ---')
+        print()
+        print('The result is : ')
+        print(numpy.multiply(self._x,self._y))
+        print()
+
+    def transpose(self):
+        print()
+        print('--- Transposing the Matrices Option has been selected ---')
+        print()
+        print('The result is : ')
+        print(f'For X : ')
+        print(self._x.T)
+        print(f'For y : ')
+        print(self._y.T)
+        print()
+
+    def divide(self):
+        print()
+        print('--- Dividing the Matrices Option has been selected ---')
+        print()
+        print('The result is : ')
+        print(numpy.divide(self._x,self._y))
+        print()
 
     def main(self):
         while True:
             print('''
+            ------- The Main Menu -------
                 1. Read two Matrices
                 2. Add
                 3. Subtract
@@ -53,21 +100,22 @@ class Matrix:
                 if choice_ == 1:
                     self.read()
                 elif choice_ == 2:
-                    print('Addition')
+                    self.add()
                 elif choice_ == 3:
-                    print('Subtract')
+                    self.subtract()
                 elif choice_ == 4:
-                    print('Multiply')
+                    self.multiply()
                 elif choice_ == 5:
-                    print('Divide')
+                    self.divide()
                 elif choice_ == 6:
-                    print('Transpose')
+                    self.transpose()
                 else:
+                    print('--- Thank You for Your Time ---')
                     break
 
 
             except Exception as e:
-                print(e)
+                print(f'--- {e} ---')
 
 if __name__ == '__main__':
     Matrix().main()
