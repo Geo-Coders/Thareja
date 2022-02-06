@@ -1,3 +1,4 @@
+''' Not Yet completed '''
 # Write a program that displays a menu and its price. Take the order from the customer.
 # Check if the ordered product is in the menu. In case it is not there, the 
 # customer should be added in the bill.
