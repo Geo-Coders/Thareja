@@ -1,4 +1,1 @@
------ This Project is meant to review Python Programming Using Problem Solving Approach by REEMA THAREJA -----
-
-
-We have recoded and improved all the examples in the book, we also attempted all the given exercise questions and then we created the Tests to text our programs
+This Repo contains Examples and Solutions to Some of the Programming Exercises. Also You should you find code that has some mistakes or does work also feel free to contribute.
