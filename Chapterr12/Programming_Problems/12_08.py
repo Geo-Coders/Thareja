@@ -6,5 +6,4 @@ try:
     raise NameError
 except:
     print('Re-raising exception')
-    raise
 

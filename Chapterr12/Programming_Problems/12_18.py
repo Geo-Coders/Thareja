@@ -4,11 +4,6 @@
 print('--- A Program to find the square of a number---')
 print()
 
-
-class square:
-    def __init__(self, val):
-        self.val = val  # int(input('Enter a number'))
-
         try:
             print(self.val ** 2)
         except ValueError:
