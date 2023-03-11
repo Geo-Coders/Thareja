@@ -5,7 +5,7 @@ print('---- A Program to implement zip() function ---')
 print()
 
 questions= [
-    'What is your Name : ',
+    'What is your Name? ',
     'How old are you? ',
     'Which country are you from? '
 ]
